@@ -1,0 +1,16 @@
+<html>
+<script type="text/javascript">
+    var numberOfCalls = 0;
+    function calculateBinomial(a, b) {
+        var square0fA = a * a;
+        var square0fB = b * b;
+        numberOfCalls++;
+        return square0fA + square0fB + 2 * a * b;
+    }
+
+    alert(calculateBinomial(2, 3));
+    alert(calculateBinomial(4, 5));
+    alert(numberOfCalls);
+    alert(typeof square0fA);
+</script>
+</html>
