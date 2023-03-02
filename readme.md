@@ -10,15 +10,19 @@ It will be printed 4 alert messages:
 The typeof operator returns a string indicating the type of the operand's value, in this case squareOfA is an undeclared variable.
 
 #### 2.
+```
     const fruitList = ["Apple", "Orange", "Banana", "Strawberry", "Grape", "Mango", "Melon", "Pineapple", "Peach", "Peach"];
     let filteredData = fruitList.filter(value => value.includes('p'));
     console.log(filteredData);
-    
+```
+```
     const findGrape = ["Apple", "Orange", "Banana", "Strawberry", "Grape", "Mango", "Melon", "Pineapple", "Peach", "Peach"].find(str => str === 'Grape');
     console.log('We found the', findGrape);
+    ```
     
 
 #### 3.
+```
     const mostrar = (param) => { 
         param();
       };
@@ -26,8 +30,10 @@ The typeof operator returns a string indicating the type of the operand's value,
       mostrar(() => {
         console.log("Etendo!!!");
       });
+      
+      ```
 #### 4.
-```javascript
+```
 function isDiagonalMatrix(matrix) {
     for (let i = 0; i < matrix.length; i++) {
       for (let j = 0; j < matrix[i].length; j++) {
@@ -144,27 +150,30 @@ that contains an array of objects in the following form:
 #### 16
 
 The error in the given React component is that the export statement is missing. The correct code should be: 
-    export const Button = ({ text }) => { return ( <div className="button"> <h1 className="text-button">{text}</h1> </div> ); };    export const Button = ({ text }) => { 
+   ``` export const Button = ({ text }) => { return ( <div className="button"> <h1 className="text-button">{text}</h1> </div> ); };    export const Button = ({ text }) => { 
     return(
     <div className="button"> 
     	<h1 className="text-button">{text}</h1>
     </div> );
     };
+    ```
 
 
 ####18.
-
+```
     fetch('https://www.example.com/data.json')
       .then(response => response.json())
       .then(data => {
         // do something with the data
       });
-
+```
 ####19. 
 The useEffect hook is part of React's Hooks API and allows you to perform side effects within a functional component.
 The useEffect Hook allows you to perform side effects in your components. Some examples of side effects are: fetching data, directly updating the DOM, and timers. useEffect accepts two arguments.
 
 ####20.
+
+```
     const useCounter = (initialValue) => {
       const [count, setCount] = useState(initialValue);
       const changeValue = (amount) => {
@@ -172,3 +181,4 @@ The useEffect Hook allows you to perform side effects in your components. Some e
       };
       return [count, changeValue];
     };
+```
