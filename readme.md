@@ -1,4 +1,4 @@
-### Javascript
+# Answers Javascript
 
 #### 1.
 It will be printed 4 alert messages:
@@ -19,6 +19,7 @@ The typeof operator returns a string indicating the type of the operand's value,
     
 
 #### 3.
+```
     const mostrar = (param) => { 
         param();
       };
@@ -26,6 +27,8 @@ The typeof operator returns a string indicating the type of the operand's value,
       mostrar(() => {
         console.log("Etendo!!!");
       });
+``` 
+
 #### 4.
 ```javascript
 function isDiagonalMatrix(matrix) {
@@ -115,6 +118,8 @@ React will re-render the component to reflect the new state
 #### 14.
 Write a component that renders a list of elements, given a prop
 that contains an array of objects in the following form:
+
+```
 { firstname: "demo", lastname: "demo", dni: 1234 }
 
 
@@ -134,12 +139,14 @@ that contains an array of objects in the following form:
         
     export default PersonList;
 
-
+```
 #### 15.
+
+```
     export function DataRenderer = (props) => {
           return <h1>{props.data}</h1>;
         }
-
+```
 
 #### 16
 
@@ -153,18 +160,19 @@ The error in the given React component is that the export statement is missing. 
 
 
 ####18.
-
+```
     fetch('https://www.example.com/data.json')
       .then(response => response.json())
       .then(data => {
         // do something with the data
       });
-
+```
 ####19. 
 The useEffect hook is part of React's Hooks API and allows you to perform side effects within a functional component.
 The useEffect Hook allows you to perform side effects in your components. Some examples of side effects are: fetching data, directly updating the DOM, and timers. useEffect accepts two arguments.
 
 ####20.
+```
     const useCounter = (initialValue) => {
       const [count, setCount] = useState(initialValue);
       const changeValue = (amount) => {
@@ -172,3 +180,4 @@ The useEffect Hook allows you to perform side effects in your components. Some e
       };
       return [count, changeValue];
     };
+ ```
