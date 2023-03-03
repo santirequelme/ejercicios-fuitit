@@ -31,7 +31,25 @@ int countNonZero(int[] arr) {
 ```
 [source](https://www.geeksforgeeks.org/move-zeroes-end-array/)
 
-#### 4.
+
+
+## SQL
+This code was developed with help of AI
+```SQL
+1 SELECT Name FROM ADWindow WHERE ADWindow_ID = '100';
+
+2 UPDATE ADWindow SET Name = Name + '--' WHERE ADWindow_ID = '100';
+
+3 SELECT Name FROM ADTab WHERE ADWindow_ID = '100';
+
+4 SELECT t.Name AS TabName, f.Name AS FieldName FROM ADTab t JOIN ADField f ON t.ADTabID = f.ADTabID WHERE t.ADWindowID = '100' ORDER BY t.Name, f.Name;
+
+5 SELECT w.Name, COUNT(t.ADTabID) AS TabCount FROM ADWindow w JOIN ADTab t ON w.ADWindowID = t.ADWindowID GROUP BY w.Name;
+
+6 SELECT w.Name, COUNT(f.ADFieldID) AS FieldCount FROM ADWindow w JOIN ADTab t ON w.ADWindowID = t.ADWindowID JOIN ADField f ON t.ADTabID = f.ADTab_ID GROUP BY w.Name ORDER BY FieldCount DESC;
+
+7 SELECT w.Name FROM ADWindow w JOIN ADTab t ON w.ADWindowID = t.ADWindowID GROUP BY w.Name HAVING COUNT(t.ADTabID) > 5;
+```
 
 
 
